@@ -1,0 +1,111 @@
+body{
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: large;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(24, 109, 194);
+
+}
+
+.container{
+    display: none;
+    grid-template-columns: auto auto auto;
+    background-color:rgba(0, 0, 0, 0.200);
+    padding: 10px;
+}
+
+@media only screen and (max-width: 645px) {
+    .container{
+        grid-template-columns: auto auto;
+    }
+}
+
+a{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right{
+    grid-column: 2 / span 3;
+}
+
+img{
+    grid-column-end: none;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+footer{
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.681);
+}
+
+header{
+    background: rgba(0, 0, 0, 0.681);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: 50px;
+    justify-content: center;
+    padding-left: 10px;
+
+}
+
+h1{
+    padding-left: 10px;
+}
+
+.forms{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.200);
+}
+
+form{
+    margin-top: 10px;
+}
+
+
+.buttoN{
+    background-color: rgba(0, 0, 0, 0.600);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 5px;
+    display: inline-block;
+    border-style: solid;
+    line-height: normal;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.3s;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.75));
+  }
+  
+  .buttoN:hover{
+    background-color:#7474749c;
+    color: white;
+  }
+
+#country_title, #state_title, #city_title, #data_title{
+    display: none;
+}
+
+
